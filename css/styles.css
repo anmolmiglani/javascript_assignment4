@@ -1,0 +1,191 @@
+/* styles.css */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3498db, #6c5b7b);
+}
+
+ /* container */
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  color: #333;
+  max-width: 500px;
+  width: 100%;
+  margin: auto; /* Add this line to center the container */
+}
+
+ /* header seaction */
+header {
+  background-color: #3498db;
+  padding: 20px;
+  border-radius: 15px 15px 0 0;
+}
+
+ /* h1 section */
+h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 36px;
+}
+ /* student-info */
+#student-info {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+ /* search container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+ /* input */
+input {
+  padding: 15px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 70%;
+}
+
+ /* button */
+button {
+  background-color: #6c5b7b;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  width: 30%;
+}
+
+ /* weather info */
+#weather-info {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#weather-info p {
+  margin: 15px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+/* here are the Animations  */
+.animate__animated {
+  animation-duration: 1s;
+}
+
+ /* animate fade in */
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+ /* animate fade in left */
+.animate__fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.animate__fadeInRight {
+  animation-name: fadeInRight;
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.animate__fadeInDown {
+  animation-name: fadeInDown;
+}
+
+ /* footer section */
+footer {
+  margin-top: auto;
+  padding: 20px; /* Increase padding for better visibility */
+  background-color: #3498db; /* Change background color to a more visible one */
+  text-align: center; /* Center-align text */
+}
+
+.docs-link {
+  font-size: 16px; /* Increase font size for better readability */
+  color: #fff; /* White text for better contrast */
+}
+
+.docs-link a {
+  color: #fff; /* White text for better contrast */
+  text-decoration: underline; /* Underline the link for better visibility */
+}
+
+.docs-link a:hover {
+  color: #ffd700; /* Change link color on hover for a highlight effect */
+  text-decoration: none; /* Remove default underline on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

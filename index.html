@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-FIyxEjBYpdz9u9nIJDeH2Iu6fSX0WbDw+0ybQV5XKfsEHxOZCBVWORqGzvEFsQ9uUQCPewv+1PUAVuDLz1BxTqw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container animate__animated animate__fadeInDown">
+      <header>
+        <h1 class="animate__animated animate__fadeInDown">Weather App</h1>
+      </header>
+
+      <div id="student-info" class="animate__animated animate__fadeInUp">
+        <p>Student ID: 200534220 | Name: Anmol Miglani</p>
+      </div>
+
+      <div class="search-container animate__animated animate__fadeIn">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter City"
+          class="animate__animated animate__fadeInLeft"
+        />
+        <button
+          id="getWeatherButton"
+          class="animate__animated animate__fadeInRight"
+          onclick="getWeather()"
+        >
+          Get Weather
+        </button>
+      </div>
+
+      <div id="weather-info" class="animate__animated animate__fadeIn"></div>
+    </div>
+
+    <footer>
+      <p class="docs-link">
+        Visit the OpenWeatherMap
+        <a
+          href="https://openweathermap.org/current#builtin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          documentation
+        </a>
+        for more details.
+      </p>
+    </footer>
+
+    <script defer src="js/script.js"></script>
+  </body>
+</html>
